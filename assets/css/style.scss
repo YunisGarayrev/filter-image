@@ -1,0 +1,133 @@
+@import 'partials/mixins';
+@import 'partials/variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: Montserrat, sans-serif;
+    letter-spacing: .1em;
+    font-weight: 500;
+
+}
+
+::selection {
+    background-color: $body-color;
+    color: $extra-color-1
+}
+
+.container {
+    font-size: $body-size;
+
+
+    ul {
+        display: flex;
+
+        li {
+            padding: 1em;
+
+
+            &:hover {
+                color: $body-color;
+            }
+        }
+    }
+
+    #sort {
+        font-size: $body-size;
+        padding-right: 20px;
+        cursor: pointer;
+    }
+}
+
+.col-3 {
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 370px;
+        overflow: hidden;
+        transition: 0.2s all ease-in-out;
+
+        &:hover {
+            overflow: hidden;
+            transform: scale(1.04);
+        }
+    }
+
+
+}
+
+.position {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    width: 18%;
+    height: 30px;
+    font-family: "Playfair Display", serif;
+    font-size: $span-size;
+    box-sizing: border-box;
+    margin: 10px 0 0 12px;
+    padding: 5px 11px;
+
+}
+
+.extra {
+    background-color: $extra-color-1;
+    color: $extra-color-2;
+    border: 1px solid transparent;
+}
+
+h6 {
+    font-family: Montserrat, sans-serif;
+    letter-spacing: .1em;
+    font-size: $body-size;
+    font-weight: lighter;
+    padding-bottom: 7px;
+}
+
+p {
+    font-size: 11px;
+    color: gray;
+
+    span {
+        padding-left: 6px;
+    }
+
+}
+#filter-part{
+    width: 30%;
+    height: 290px;
+    background-color: $extra-color-1;
+    display: flex;
+    justify-content: space-evenly ;
+    position: fixed;
+    color: #737373;
+    text-align: left;
+    padding: 13px 0px 17px;
+    z-index: 1;
+    right: -2px;
+    margin-right: 5%;
+
+    h5{
+        font-size: 22px;
+    line-height: 1.363em;
+    margin: 20px 0;
+    color: #2b2b2b;
+    font-family: "Playfair Display",serif;
+    font-weight: 400;
+    }
+   
+}
+.column {
+    
+        li{
+            p{
+                padding-top: 7px;
+            }
+        }
+    }
