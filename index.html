@@ -17,15 +17,18 @@
 
 <body>
     <div class="container d-flex mt-1 ">
-        <ul>
-            <li id="total">ALL</li>
-            <li class="cactuses">CACTUSES</li>
-            <li class="exotic">EXOTIC</li>
-            <li class="greens">GREENS</li>
-            <li class="popular">POPULAR</li>
-            <li class="various">VARIOUS</li>
-            <li class="winter">WINTER</li>
-        </ul>
+        <div id="control">
+
+            <ul>
+            <li id="all" onclick="myFunction1()">ALL</li>
+            <li onclick="myFunction2()">CACTUSES</li>
+            <li onclick="myFunction3()">EXOTIC</li>
+            <li onclick="myFunction4()">GREENS</li>
+            <li onclick="myFunction5()">POPULAR</li>
+            <li onclick="myFunction6()">VARIOUS</li>
+            <li onclick="myFunction7()">WINTER</li>
+        </ul></div>
+        
         <div id="sort">FILTER <i class="las la-caret-down"></i>
             <div id="filter-part">
                 <div class="sort-by"><h5>Sort By</h5>
@@ -53,21 +56,21 @@
 
     <div class="container-1 ">
         <div class="flex">
-            <div class="flow-div col-3 p-1 "><img class="winter"
+            <div class="flow-div col-3 p-1 foto" id="winter" ><img 
                     src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-14-img.jpg" alt="">
                 <div class="column p-1">
                     <h6>MAJESTY PALM</h6>
                     <p>$259</p>
                 </div>
             </div>
-            <div class="flow-div col-3 p-1"><img class="winter"
+            <div class="flow-div col-3 p-1 foto" id="winter"><img 
                     src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-13-img.jpg" alt="">
                 <div class="column p-1">
                     <h6>FOXGLOVE FLOWER</h6>
                     <p>$259</p>
                 </div>
             </div>
-            <div class="flow-div col-3 p-1"><img class="various"
+            <div class="flow-div col-3 p-1 foto" id="various"><img 
                     src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/shop-10-img.jpg" alt="">
                     <span class="position display">Sold</span>
                 <div class="column p-1">
@@ -76,14 +79,14 @@
                     
                 </div>
             </div>
-            <div class="flow-div col-3 p-1"><img class="various"
+            <div class="flow-div col-3 p-1 foto" id="various"><img 
                     src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-11-img.jpg" alt="">
                 <div class="column p-1">
                     <h6>SPRING SNOWFLAKE</h6>
                     <p>$170</p>
                 </div>
             </div>
-            <div class="flow-div col-3 p-1"><img class="popular"
+            <div class="flow-div col-3 p-1 foto" id="popular"><img 
                     src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-12-img.jpg" alt="">
                 <div class="column p-1">
                     <span class="position extra display">Sale</span>
@@ -91,28 +94,28 @@
                     <p><del>$259</del><span>$159</span></p>
                 </div>
             </div>
-            <div class="flow-div col-3 p-1"><img class="cactuses"
+            <div class="flow-div col-3 p-1 foto" id="cactuses"><img 
                     src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-9-img.jpg" alt="">
                 <div class="column p-1">
                     <h6>ROCK SOAPWORT</h6>
                     <p>$259</p>
                 </div>
             </div>
-            <div class="flow-div col-3 p-1"><img class="popular"
+            <div class="flow-div col-3 p-1 foto" id="popular"><img 
                     src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-8-img.jpg" alt="">
                 <div class="column p-1">
                     <h6>SUMMER SAVORY</h6>
                     <p>$259</p>
                 </div>
             </div>
-            <div class="flow-div col-3 p-1"><img class="exotic"
+            <div class="flow-div col-3 p-1 foto" id="exotic"><img 
                     src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-7-img.jpg" alt="">
                 <div class="column p-1">
                     <h6>WILD ROSES</h6>
                     <p>$259</p>
                 </div>
             </div>
-            <div class="flow-div col-3 p-1"><img class="cactuses"
+            <div class="flow-div col-3 p-1 foto" id="cactuses"><img 
                     src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/shop-5-img.jpg" alt="">
                 <div class="column p-1">
                     <h6>WILD CACTUS</h6>
@@ -120,7 +123,7 @@
                 </div>
             </div>
 
-            <div class="flow-div col-3 p-1"><img class="cactuses"
+            <div class="flow-div col-3 p-1 foto" id="cactuses"><img 
                     src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-3-img.jpg" alt="">
                 <div class="column p-1">
                     <h6>CACTUS IN ORANGE</h6>
@@ -128,7 +131,7 @@
                 </div>
             </div>
 
-            <div class="flow-div col-3 p-1"><img  class="exotic"
+            <div class="flow-div col-3 p-1 foto" id="exotic"><img  
                     src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/shop-6-img.jpg" alt="">
                 <div class="column p-1">
                     <h6>COLORFUL TULIPS</h6>
@@ -136,14 +139,14 @@
                 </div>
             </div>
 
-            <div class="flow-div col-3 p-1"><img class="exotic"
+            <div class="flow-div col-3 p-1 foto" id="exotic"><img 
                     src="	https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/shop-2-img.jpg" alt="">
                 <div class="column p-1">
                     <h6>ORANGE AMARYLLIS</h6>
                     <p>$259</p>
                 </div>
             </div>
-            <div class="flow-div col-3 p-1"><img class="greens"
+            <div class="flow-div col-3 p-1 foto " id="greens"><img 
                 src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/shop-4-img.jpg" alt="">
             <div class="column p-1">
                 <h6>PINK FLOWER TREE</h6>
